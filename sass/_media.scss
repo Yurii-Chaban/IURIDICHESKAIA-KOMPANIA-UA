@@ -197,9 +197,6 @@
 				.news-item-content {
 					font-size: 18px;
 					line-height: 21px;
-					span {
-						display: inline;
-					}
 				}
 			}
 		}
@@ -245,9 +242,6 @@
 				.services-item-content {
 					font-size: 18px;
 					line-height: 21px;
-					span {
-						display: inline;
-					}
 				}
 			}
 		}
@@ -339,7 +333,6 @@
 		.slider-more {
 			max-width: 1020px;
 			margin: 39px auto 74px;
-			padding: 0 15px 0 50px;
 
 			.left-rgba,
 			.right-rgba {
@@ -347,13 +340,72 @@
 			}
 
 			.center {
-				padding: 0 30px 0 40px;
 
-				.slick-slide {
-					height: 190px;
-					width: 287px !important;
-					margin: 0 14px;
+
+				.fa-angle-left,
+				.fa-angle-right {
+					display: inline-block;
+					top: 45%;
+					transform: translateX(-45%);
+					position: absolute;
+					z-index: 2;
+					width: 30px;
+					height: 30px;
+					border: 2px solid #68be28;
+					font-size: 22px;
+					font-weight: 400;
+					line-height: 30px;
+					color: #68be28;
+					text-align: center;
+					
+					&:hover {
+						background-color: #68be28;
+						color: #fff;
+					}
 				}
+
+				.fa-angle-left {
+					left: 22px;
+				}
+
+				.fa-angle-right {
+					right: 0;
+				}
+			}
+		}
+	}
+	// ARTICLES MORE PAGE 
+	.articles-more-page {
+		padding: 48px 0 9px;
+
+		.post-date {
+			margin: 19px 0 7px 307px;
+			text-align: left;
+		}
+
+		.img-wrapper {
+			float: left;
+			margin: -28px 15px 0 3px;
+		}
+
+		.articles-more-content {
+			margin: 12px 0 14px 4px;
+			padding: 0;
+			&:nth-of-type(2) {
+				display: block;
+			}
+		}
+		.slider-more {
+			max-width: 1020px;
+			margin: 39px auto 74px;
+
+			.left-rgba,
+			.right-rgba {
+				display: none;
+			}
+
+			.center {
+
 
 				.fa-angle-left,
 				.fa-angle-right {
@@ -950,6 +1002,32 @@
 }
 // -----------------------------------------
 
+.news-page {
+	.news-list {
+		li {
+			.news-item-content {
+				span {
+					display: inline;
+				}
+			}
+		}
+	}
+}
+// -----------------------------------------
+
+.services-page {
+	.services-list {
+		li {
+			.services-item-content {
+				span {
+					display: inline;
+				}
+			}
+		}
+	}
+}
+// -----------------------------------------
+
 // INFORMATION PAGE
 .info-page {
 	.info-list {
@@ -976,6 +1054,52 @@
 		}
 	}
 }
+// -----------------------------------------
+
+// NEWS MORE PAGE 
+.news-more-page {
+
+	.slider-more {
+		max-width: 1020px;
+		margin: 39px auto 74px;
+		padding: 0 15px 0 50px;
+
+
+		.center {
+			padding: 0 44px 0 22px;
+
+			.slick-slide {
+				height: 190px;
+				width: 287px !important;
+				margin: 0 5px;
+			}
+			.fa-angle-left {
+				left: 0;
+			}
+		}
+	}
+}
+	// ARTICLES MORE PAGE 
+	.articles-more-page {
+		.slider-more {
+			max-width: 1020px;
+			margin: 39px auto 74px;
+			padding: 0 15px 0 50px;
+
+			.center {
+				padding: 0 44px 0 22px;
+
+				.slick-slide {
+					height: 190px;
+					width: 287px !important;
+					margin: 0 5px;
+				}
+				.fa-angle-left {
+					left: 0;
+				}
+			}
+		}
+	}
 // -----------------------------------------
 
 // FOOTER
@@ -1142,6 +1266,17 @@ footer {
 		}
 	}
 }
+@media (min-width: 1440px) {
+	.news-more-page {
+		.slider-more {
+			.center {
+				.fa-angle-left {
+					left: 20px;
+				}
+			}
+		}
+	}
+}
 @media (min-width: 1200px) {
 	.page-slider {
 		.swiper-container-home-page {
@@ -1153,6 +1288,53 @@ footer {
 			}
 		}
 	}
+	// NEWS MORE PAGE 
+	.news-more-page {
+
+		.slider-more {
+			max-width: 1020px;
+			margin: 39px auto 74px;
+			padding: 0 15px 0 50px;
+
+
+			.center {
+				padding: 0 30px 0 40px;
+
+				.slick-slide {
+					height: 190px;
+					width: 287px !important;
+					margin: 0 14px;
+				}
+
+				.fa-angle-left {
+					left: 22px;
+				}
+			}
+		}
+	}
+	// ARTICLES MORE PAGE 
+	.articles-more-page {
+		.slider-more {
+			max-width: 1020px;
+			margin: 39px auto 74px;
+			padding: 0 15px 0 50px;
+
+			.center {
+				padding: 0 30px 0 40px;
+
+				.slick-slide {
+					height: 190px;
+					width: 287px !important;
+					margin: 0 14px;
+				}
+
+				.fa-angle-left {
+					left: 22px;
+				}
+			}
+		}
+	}
+// -----------------------------------------
 }
 @media (min-width: 1800px) {
 	.page-slider {
