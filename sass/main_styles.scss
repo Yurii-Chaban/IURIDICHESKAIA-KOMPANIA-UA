@@ -117,10 +117,11 @@ $HelveticaNeue: 'HelveticaNeue', sans-serif;
 
 @mixin videoWrapper {
 	position: relative;
+	margin: 15px auto;
 	padding-bottom: 56.25%; /* 16:9 */
 	height: 0;
-	max-width: 911px;
-	max-height: 469px;
+	max-width: 980px;
+	max-height: 432px;
 	overflow: hidden;
 	iframe {
 		position: absolute;
@@ -183,5 +184,6 @@ a {
 @import "news-page";
 @import "services-page";
 @import "helpful-information-page";
+@import "about-page";
 
 @import "media";

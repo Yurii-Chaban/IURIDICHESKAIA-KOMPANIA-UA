@@ -296,6 +296,24 @@
 			margin: 0 6px 31px 0;
 		}
 	}
+
+	// ABOUT PAGE 
+	.about-page {
+		padding: 48px 0 9px;
+
+		.img-wrapper {
+			float: left;
+			margin: 10px 15px 15px 3px;
+		}
+
+		.about-content {
+			margin: 20px 0 28px 4px;
+			padding: 0;
+			&:nth-of-type(2) {
+				display: block;
+			}
+		}
+	}
 }
 
 @media (min-width: 1024px) {
@@ -1042,6 +1060,13 @@ footer {
 	}
 	.content-404 {
 		padding: 80px 0 40px;
+	}
+
+	// ABOUT PAGE
+	.about-page {
+		.videoWrapper {
+			padding-bottom: 44%;
+		}
 	}
 }
 @media (min-width: 1200px) {
