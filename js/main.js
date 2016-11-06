@@ -123,8 +123,32 @@ var swiper = new Swiper('.swiper-container-desctop', {
     speed: 1000,
     spaceBetween: 0
 });
-// FOR DROPDOWN ACTIVE
-// $(document).ready(function($) {
-//     $('.ui.dropdown')
-//     .dropdown();
-// });     
+// FOR NEWS MORE PAGE
+$('.center').slick({
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+    ],
+  nextArrow: '<i class="fa fa-angle-right"></i>',
+  prevArrow: '<i class="fa fa-angle-left"></i>',
+});
