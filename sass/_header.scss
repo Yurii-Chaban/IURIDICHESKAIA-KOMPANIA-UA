@@ -1,0 +1,219 @@
+header {
+	position: relative;
+	max-height: 64px;
+	height: 100%;
+	padding: 11px 0;
+	z-index: 101;
+	background-color: #f0e9e0;
+	box-shadow: -0.3px 5px 5px rgba(0, 0, 0, 0.15);
+
+	.header-top-block {
+		display: none;
+	}
+
+	.main-menu,
+	.lenguage-block {
+		display: none;
+	}
+
+	.dropdovn-menu-mobile {
+		position: relative;
+		.hidden-menu {
+			display: block;
+			position: absolute;
+			list-style:none;
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+			width: auto;
+			background-color: #68be28;
+			box-shadow: -0.3px 5px 5px rgba(0, 0, 0, 0.15);
+			height: auto;
+			padding: 60px 0 15px 0;
+			top: 52px;
+			left: -650px;
+			transition: left .2s;
+			z-index: 9;
+			-webkit-transform: classZ(0);
+			-webkit-backface-visibility: hidden;
+			li {
+				display: block;
+				width: 100%;
+				height: 43px;
+				margin: 0 auto;
+				text-align: left;
+				line-height: 43px;
+				vertical-align: middle;
+
+				a {
+					display: block;
+					width: 100%;
+					height: 100%;
+					padding: 0 25px;
+					color: white;
+					font: 400 22px / 45px $Roboto;
+					@include transition;
+
+					&:hover {
+						background: #6B8E23;
+					}
+				}
+				a.hidden-menu-active {
+					background: #6B8E23;
+				}
+			}
+			.language-item {
+				a {
+					display: inline-block;
+					width: 28px;
+					height: 25px;
+					padding: 3px 5px;
+					color: black;
+					font: 400 18px / 22px $Roboto;
+					text-transform: uppercase;
+					&:first-of-type {
+						margin-left: 20px;
+					}
+				}
+				a.active-lenguage {
+					background: #6B8E23;
+				}
+				span {
+					color: #000;
+				}
+			}
+		}
+		.hidden-menu-ticker {
+			display: none;
+		}
+		.btn-menu {
+			color: #fff;
+			background-color: none;
+			position: absolute;
+			top: 15px;
+			left: 0;
+			cursor: pointer;
+			transition: left .23s;
+			z-index: 99;
+			width: 26px;
+			-webkit-transform: classZ(0);
+			-webkit-backface-visibility: hidden;
+		}
+		.btn-menu span {
+			display: block;
+			height: 2px;
+			background-color: #7a7a7a;
+			margin: 3px 0 0;
+			transition: all .1s linear .23s;
+			border-radius: 10px;
+			position: relative;
+		}
+		.btn-menu span.first {
+			margin-top: 0;
+		}
+		.hidden-menu-ticker:checked ~ .btn-menu {
+			left: 230px;
+			top: 20px;
+			z-index: 99999;
+		}
+		.hidden-menu-ticker:checked ~ .hidden-menu {
+			left: -15px;
+			top: -11px;
+			overflow: hidden;
+			margin: 0;
+			z-index: 9999;
+		}
+		.hidden-menu-ticker:checked ~ .btn-menu span.first {
+			height: 3px;
+			-webkit-transform: rotate(45deg);
+			top: 9px;
+			background-color: #fff;
+		}
+		.hidden-menu-ticker:checked ~ .btn-menu span.second {
+			opacity: 0;
+			background-color: #fff;
+		}
+
+		.hidden-menu-ticker:checked ~ .btn-menu span.third {
+			height: 3px;
+			-webkit-transform: rotate(-45deg);
+			top: -2px;
+			background-color: #fff;
+		}
+	}
+
+	/*logo*/
+	.block-logo {
+		.logo {
+			// max-width: 100px;
+			width: auto;
+			// max-height: 50px;
+			height: auto;
+			overflow: hidden;
+			margin: 0 auto;
+			padding: 5px 0 0 5%;
+			text-align: center;
+
+			img {
+				max-width: 100%;
+				height: auto;
+			}
+		}
+	}
+	/*dropdown*/
+	.call-us-block {
+		float: right;
+		margin: 0;
+		vertical-align: middle;
+
+		span {
+			display: inline-block;
+			line-height: 33px;
+			vertical-align: middle;
+			color: #7a7a7a;
+			font-size: 29px;
+		}
+	}
+	#info-mobile {
+		width: 258px;
+		height: auto;
+		background-color: #68be28;
+		box-shadow: -0.3px 5px 5px rgba(0, 0, 0, 0.15);
+		clear:none;
+		float: right;
+		position: absolute;
+		top: 61px;
+		right: 0;
+		z-index: 100;
+		@include transition;
+
+		a {
+			display: block;
+			margin: 6px auto;
+			padding: 13px 5px;
+			text-align: center;
+			.phone {
+				color: white;
+				font: 700 22px / 26px $Roboto;
+			}
+		}
+	}
+	.call-us-block > label {
+		float: right;
+		position: relative;
+		z-index: 2;
+		margin: 5px 0 0;
+		color: #000; 
+		cursor: pointer;
+		@include transition;
+	}
+	input{display:none;}
+	input:checked+#info-mobile{display:none;}
+
+	/*end dropdown phone*/
+	/*end menu*/
+	.main-menu,
+	.lenguage-block {
+		display: none;
+	}
+}

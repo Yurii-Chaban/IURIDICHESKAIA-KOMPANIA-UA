@@ -1,0 +1,178 @@
+footer {
+	@include site-container;
+	padding: 34px 0 0;
+	background-color: #68be28;
+
+	.form-block {
+		.form-title {
+			margin: 10px auto 2px;
+			text-align: center;
+			color: #fff;
+			font: 400 22px / 30px $Roboto;
+			text-transform: uppercase;
+		}
+
+		#contact-form {
+			overflow: hidden;
+			#name,
+			#phone,
+			#email,
+			#message-area {
+				@include border-box;
+				width: 100%;
+				margin: 7px auto;
+				outline: none;
+				background: #fff;
+				border: none;
+				color: #000;
+				font: 400 18px / 22px $Roboto;
+				outline: none;
+				resize: none;
+			}
+			#name,
+			#phone,
+			#email {
+				height: 36px;
+				padding: 0 0 0 35px;
+				background-position: 10px 11px !important;
+
+				::-webkit-input-placeholder {
+					padding-left: 35px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+
+				:-moz-placeholder {
+					padding-left: 35px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+
+				::-moz-placeholder {
+					padding-left: 35px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+
+				:-ms-input-placeholder {
+					padding-left: 35px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+			}
+
+			#name {
+				background: #fff url("../images/icon-man-form.png") no-repeat;
+			}
+			#phone {
+				background: #fff url("../images/icon-phone-form.png") no-repeat;
+			}
+			#email {
+				background: #fff url("../images/icon-email-form.png") no-repeat;
+			}
+			#message-area {
+				height: 115px;
+				padding: 10px 0 0 8px;
+				resize: none;
+
+				::-webkit-input-placeholder {
+					padding: 10px 0 0 8px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+
+				:-moz-placeholder {
+					padding: 10px 0 0 8px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+
+				::-moz-placeholder {
+					padding: 10px 0 0 8px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+
+				:-ms-input-placeholder {
+					padding: 10px 0 0 8px;
+					color: #7a7a7a;
+					font: 400 18px / 22px $Roboto;
+				}
+			}
+			#sbm-btn {
+				display: block;
+				width: 123px;
+				height: 31px;
+				border: 2px solid white;
+				margin: 8px auto 44px;
+				background: inherit;
+				outline: none;
+				cursor: pointer;
+				color: white;
+				font: 400 18px / 22px $Roboto;
+			}
+		}
+	}
+
+	.social-block {
+		clear: both;
+		overflow: hidden;
+		margin: 33px auto;
+		.social-list {
+			@include border-box;
+			margin: 0 auto;
+			text-align: center;
+			li {
+				display: inline-block;
+				margin: 0 15px;
+				text-align: center;
+				a {
+					span {
+						color: #fff;
+						font-size: 38px;
+					}
+				}
+			}
+		}
+	}
+
+	.phone-block {
+		margin: 0 auto 40px;
+		text-align: center;
+		li {
+			display: block;
+			margin: 12px auto;
+			a {
+				color: #fff;
+				font: 400 30px / 35px $Roboto;
+			}
+		}
+	}
+
+	.footer-menu,
+	.footer-services {
+		display: none;
+	}
+
+	.copyright {
+		clear: both;
+		margin: 0 auto;
+		padding: 5px 0;
+		text-align: center;
+		@include border-box;
+		background: #000;
+		.copyright-sign {
+			margin: 0 auto;
+			color: #bababa;
+			font: 400 15px / 22px $HelveticaNeue;
+
+			a {
+				color: #bababa;
+
+				&:hover {
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}

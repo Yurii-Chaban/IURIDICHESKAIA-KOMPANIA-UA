@@ -1,0 +1,117 @@
+.order-page {
+	@include site-container;
+	padding: 20px 0;
+	background: #fff;
+
+	#order-form {
+		@include border-box;
+		max-width: 662px;
+		width: 100%;
+		margin: 0 auto;
+
+		#client-name,
+		#client-phone,
+		#client-email,
+		#client-message {
+			width: 100%;
+			margin: 7px 0;
+			@include border-box;
+			outline: none;
+			resize: none;
+			color: #000;
+			font: 400 18px / 22px $Roboto;
+			border: 2px solid #68be28;
+		}
+
+		#client-name,
+		#client-phone,
+		#client-email {
+			height: 43px;
+			padding: 0 0 0 30px;
+			background-position: 5px !important;
+
+			::-webkit-input-placeholder {
+				padding-left: 35px;
+				color: #7a7a7a;
+				font: 400 20px / 22px $Roboto;
+			}
+
+			:-moz-placeholder {
+				padding-left: 35px;
+				color: #7a7a7a;
+				font: 400 20px / 22px $Roboto;
+			}
+
+			::-moz-placeholder {
+				padding-left: 35px;
+				color: #7a7a7a;
+				font: 400 20px / 22px $Roboto;
+			}
+
+			:-ms-input-placeholder {
+				padding-left: 35px;
+				color: #7a7a7a;
+				font: 400 20px / 22px $Roboto;
+			}
+		}
+
+		#client-name {
+			background: #fff url("../images/icon-man-form.png") no-repeat;
+		}
+		#client-phone {
+			background: #fff url("../images/icon-phone-form.png") no-repeat;
+		}
+		#client-email {
+			background: #fff url("../images/icon-email-form.png") no-repeat;
+		}
+
+		#client-message {
+			height: 158px;
+			padding: 10px 0 0 8px;
+
+			::-webkit-input-placeholder {
+				padding: 10px 0 0 8px;
+				color: #7a7a7a;
+				font: 400 18px / 22px $Roboto;
+			}
+
+			:-moz-placeholder {
+				padding: 10px 0 0 8px;
+				color: #7a7a7a;
+				font: 400 18px / 22px $Roboto;
+			}
+
+			::-moz-placeholder {
+				padding: 10px 0 0 8px;
+				color: #7a7a7a;
+				font: 400 18px / 22px $Roboto;
+			}
+
+			:-ms-input-placeholder {
+				padding: 10px 0 0 8px;
+				color: #7a7a7a;
+				font: 400 18px / 22px $Roboto;
+			}
+		}
+
+		#order-sbm-btn {
+			display: block;
+			width: 198px;
+			height: 41px;
+			margin: 29px auto 0;
+			text-align: center;
+			color: white;
+			font: 400 18px / 22px $Roboto;
+			background-color: #68be28;
+			border: none;
+			cursor: pointer;
+			@include transition;
+
+			&:hover {
+				webkit-box-shadow: 0px 0px 22px 3px #68be28;
+				-moz-box-shadow: 0px 0px 22px 3px #68be28;
+				box-shadow: 0px 0px 22px 3px #68be28;
+			}
+		}
+	}
+}
