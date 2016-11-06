@@ -212,6 +212,54 @@
 			margin: 16px 3px 0 0;
 		}
 	}
+
+	// SERVICES PAGE
+	.services-page {
+		padding: 48px 0 0;
+		.services-list {
+			li {
+				max-width: 977px;
+				max-height: 187px;
+				margin: 20px 0 30px;
+				clear: both;
+				overflow: hidden;
+
+
+				&:nth-child(4),
+				&:nth-child(5) {
+					display: block;
+				} 
+
+				.img-wrapper {
+					float: left;
+					margin: 0 23px 0 0;
+				}
+				.overflow-block {
+					padding: 14px 12px 19px 0;
+				}
+
+				.services-item-title {
+					margin: 0 0 28px;
+				}
+
+				.services-item-content {
+					font-size: 18px;
+					line-height: 21px;
+					span {
+						display: inline;
+					}
+				}
+			}
+		}
+		.pagination-list {
+			float: right;
+			width: auto;
+			margin: 2px 6px 33px 0;
+		}
+		.more-item-btn {
+			margin: 16px 3px 0 0;
+		}
+	}
 }
 
 @media (min-width: 1024px) {
