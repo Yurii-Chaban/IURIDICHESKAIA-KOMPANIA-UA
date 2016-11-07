@@ -78,4 +78,16 @@
 		margin: 0 5px;
 		height: 133px;
 	}
+	.back-from-more {
+		display: block;
+		margin: 23px auto 18px;
+		text-align: center;
+		color: #68be28;
+		font: 400 18px / 22px $Roboto;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

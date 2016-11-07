@@ -1,7 +1,91 @@
-.articles-more-page {
+.services-more-page {
 	@include site-container;
 	padding: 20px 0;
 	overflow: hidden;
+
+	.services-menu {
+		max-width: 289px;
+		width: 100%;
+		height: auto;
+		margin: 20px auto;
+		padding: 23px 18px;
+		overflow: hidden;
+		@include border-box;
+		background-color: whitesmoke;
+
+		.menu-list {
+			width: 100%;
+			@include border-box;
+
+			& > li {
+				display: block;
+				width: 100%;
+				height: auto;
+				margin: 0 0 33px;
+				padding-left: 20px;
+				@include border-box;
+				position: relative;
+
+				&:before {
+					position: absolute;
+					content: "";
+					top: 5px;
+					left: 0;
+					display: block;
+					width: 10px;
+					height: 10px;
+					background-color: #68be28;
+				}
+
+				&:last-child {
+					margin-bottom: 0;
+				}
+
+				a {	
+					color: #4a4a4a;
+					font: 400 22px / 24px $Roboto;
+					text-transform: uppercase;
+				}
+
+			}
+			.toggle-submenu {
+				display: none;
+
+				.toggle-submenu-list {
+					margin: 20px 0 0 15px;
+
+					li  {
+						display: block;
+						margin: 5px 0;
+						padding-left: 15px;
+						position: relative;
+
+						&:before {
+							position: absolute;
+							content: "";
+							top: 12px;
+							left: 0;
+							display: block;
+							width: 6px;
+							height: 2px;
+							background: #7a7a7a;
+
+						}
+						a {
+							display: block;
+							margin: 15px 0;
+							color: #7a7a7a;
+							font: 400 22px / 24px $Roboto;
+							text-transform: inherit;
+						}
+					}
+				}
+			}
+			.toggle-active {
+				display: block;
+			}
+		}
+	}
 
 	.img-wrapper {
 		position: relative;
@@ -41,7 +125,7 @@
 		font: 300 16px / 22px $Roboto;
 		text-transform: uppercase;
 	}
-	.articles-more-content {
+	.services-more-content {
 		margin: 24px auto;
 		padding: 0 10px;
 		color: #4a4a4a;
@@ -78,7 +162,6 @@
 		margin: 0 5px;
 		height: 133px;
 	}
-
 	.back-from-more {
 		display: block;
 		margin: 23px auto 18px;

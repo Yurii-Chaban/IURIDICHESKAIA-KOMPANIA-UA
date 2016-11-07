@@ -152,3 +152,7 @@ $('.center').slick({
   nextArrow: '<i class="fa fa-angle-right"></i>',
   prevArrow: '<i class="fa fa-angle-left"></i>',
 });
+// FOR TOGLE MENU in services-more page
+$(".menu-list .toggle-menu").click(function() {
+    $(this).find(".toggle-submenu").toggleClass("toggle-active");
+});
